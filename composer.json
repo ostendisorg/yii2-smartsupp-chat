@@ -1,27 +1,33 @@
 {
-    "name": "tomlutzenberger/yii2-smartsupp-chat",
-    "description": "Yii2 Widget for Smartsupp Chat",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension","widget","chat","smartsupp"],
-    "license": "MIT",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "authors": [
-        {
-            "name": "Tom Lutzenberger",
-            "email": "lutzenbergertom@gmail.com"
-        }
-    ],
-    "support": {
-        "source": "https://github.com/tomlutzenberger/yii2-smartsupp-chat",
-        "issues": "https://github.com/tomlutzenberger/yii2-smartsupp-chat/issues"
+  "name": "ostendisorg/yii2-smartsupp-chat",
+  "description": "Yii2 Widget for Smartsupp Chat",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "widget",
+    "chat",
+    "smartsupp"
+  ],
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Daniel Nüssli",
+      "email": "daniel.nuessli@ostendis.com"
     },
-    "require": {
-        "yiisoft/yii2": "~2.0.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "TomLutzenberger\\Smartsupp\\": "src"
-        }
+    {
+      "name": "Tom Lutzenberger",
+      "email": "lutzenbergertom@gmail.com"
     }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ostendisorg\\smartsuppchat\\": "src"
+    }
+  }
 }

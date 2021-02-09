@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist tomlutzenberger/yii2-smartsupp-chat "*"
+php composer.phar require --prefer-dist ostendisorg/yii2-smartsupp-chat "*"
 ```
 
 or add
 
 ```
-"tomlutzenberger/yii2-smartsupp-chat": "*"
+"ostendisorg/yii2-smartsupp-chat": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,7 +28,7 @@ Usage
 Once the extension is installed, simply use it in your code by:
 
 ```php
-<?= \TomLutzenberger\Smartsupp\SmartsuppChat::widget() ?>
+<?= \ostendisorg\smartsuppchat\SmartsuppChat::widget() ?>
 ```
 
 You can either add the ID of your container to the `params.php`
@@ -38,7 +38,7 @@ You can either add the ID of your container to the `params.php`
       
 return [
     // ...
-    'smartsupp' => 'your_key',
+    'smartsuppchat' => 'your_key',
 ];
 ```
 
@@ -46,7 +46,7 @@ or pass it
 directly to the widget: 
 
 ```php
-<?= \TomLutzenberger\Smartsupp\SmartsuppChat::widget([
+<?= \ostendisorg\Smartsuppchat\SmartsuppChat::widget([
     'key' => 'your_key'
 ]) ?>
 ```
@@ -54,7 +54,7 @@ directly to the widget:
 To be able to use your own triggers you can do this by setting 2 optional parameters:
 
 ```php
-<?= \TomLutzenberger\Smartsupp\SmartsuppChat::widget([
+<?= \ostendisorg\Smartsuppchat\SmartsuppChat::widget([
     'useCustomOpener' => true,
     'useCustomOpenerMobile' => true,
 ]) ?>
