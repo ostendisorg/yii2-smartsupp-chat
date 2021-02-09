@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ostendisorg\\smartsuppchat\\": "src"
+      "ostendisorg\\Smartsupp\\": "src"
     }
   }
 }

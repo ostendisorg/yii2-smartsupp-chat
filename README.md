@@ -28,7 +28,7 @@ Usage
 Once the extension is installed, simply use it in your code by:
 
 ```php
-<?= \ostendisorg\smartsuppchat\SmartsuppChat::widget() ?>
+<?= \ostendisorg\smartsupp\SmartsuppChat::widget() ?>
 ```
 
 You can either add the ID of your container to the `params.php`
@@ -38,7 +38,7 @@ You can either add the ID of your container to the `params.php`
       
 return [
     // ...
-    'smartsuppchat' => 'your_key',
+    'smartsupp' => 'your_key',
 ];
 ```
 
@@ -46,7 +46,7 @@ or pass it
 directly to the widget: 
 
 ```php
-<?= \ostendisorg\Smartsuppchat\SmartsuppChat::widget([
+<?= \ostendisorg\Smartsupp\SmartsuppChat::widget([
     'key' => 'your_key'
 ]) ?>
 ```
@@ -54,7 +54,7 @@ directly to the widget:
 To be able to use your own triggers you can do this by setting 2 optional parameters:
 
 ```php
-<?= \ostendisorg\Smartsuppchat\SmartsuppChat::widget([
+<?= \ostendisorg\Smartsupp\SmartsuppChat::widget([
     'useCustomOpener' => true,
     'useCustomOpenerMobile' => true,
 ]) ?>
