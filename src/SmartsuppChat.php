@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLutzenberger\Smartsupp;
+namespace ostendisorg\Smartsupp;
 
 use Yii;
 use yii\base\Widget;
@@ -9,8 +9,8 @@ use yii\web\View;
 /**
  * Class SmartsuppChat
  *
- * @package   TomLutzenberger\Smartsupp
- * @copyright 2019 Tom Lutzenberger
+ * @package   ostendisorg\Smartsupp
+ * @copyright 2021 Ostendis AG
  * @author    Tom Lutzenberger <lutzenbergertom@gmail.com>
  */
 class SmartsuppChat extends Widget
