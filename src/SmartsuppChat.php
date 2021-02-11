@@ -30,7 +30,7 @@ class SmartsuppChat extends Widget
      * @var boolean Whether to hide default widget and use a custom chat opener/trigger on mobile devices
      * @see https://docs.smartsupp.com/examples/html-api/#open-chat
      */
-    public $useCustomOpenerMobile = false;
+    public $useCustomOpenerMobile = true;
 
 
     /**
@@ -49,13 +49,12 @@ class SmartsuppChat extends Widget
         $script = "var _smartsupp = _smartsupp || {};_smartsupp.key = '$this->key';";
         $script .= $this->useCustomOpener ? "_smartsupp.hideWidget = true;" : '';
         $script .= $this->useCustomOpenerMobile ? "_smartsupp.hideMobileWidget = true;" : '';
-        $script .= "
-window.smartsupp||(function(d) {
-var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-c.type='text/javascript';c.charset='utf-8';c.async=true;
-c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);";
+        $script .= "window.smartsupp||(function(d) {
+                    var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                    s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                    c.type='text/javascript';c.charset='utf-8';c.async=true;
+                    c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+                    })(document);";
 
         $view = $this->getView();
         $view->registerJs( $script, View::POS_HEAD, 'smartsupp');
