@@ -47,8 +47,6 @@ class SmartsuppChat extends Widget
         }
 
         $script = "var _smartsupp = _smartsupp || {};_smartsupp.key = '$this->key';";
-        $script .= "_smartsupp.offsetX = window.innerWidth > 449 ? 157 : 125;";
-        //$script .= "_smartsupp.offsetY = window.innerWidth > 1200 ? 11 : 5;";
         $script .= $this->useCustomOpener ? "_smartsupp.hideWidget = true;" : '';
         $script .= $this->useCustomOpenerMobile ? "_smartsupp.hideMobileWidget = true;" : '';
         $script .= "window.smartsupp||(function(d) {
